@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+unsigned long long a, nr, nrmax;
+
+int main()
+{
+    cin >> a;
+    
+    while(a > 0)
+    {
+        nr = a % 1000;
+        
+        if(nr > nrmax)
+        {
+            nrmax = nr;
+        }
+        
+        a = a /10;
+    }
+    
+    cout << nrmax;
+}
